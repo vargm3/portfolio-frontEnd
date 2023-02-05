@@ -1,0 +1,61 @@
+<div class="container-fluid">
+    <div class="row title">
+        <div class="col-md-12">
+            <div class=" name">
+                <ngx-typed-js 
+                    [strings]="['Irina Ponzi.']"
+                    [startDelay]="150"
+                    [typeSpeed]="100"
+                    [showCursor]="false"
+                    (completed)="toggleSimbol()" 
+                >
+                    <span class="typing"></span>
+                </ngx-typed-js>
+            </div>
+            <div class="description ">
+                <span class="subtitle">
+                    <span class="simbols"
+                        *ngIf="showSimbol"
+                    > < 
+                    </span>
+                    <ngx-typed-js 
+                        [strings]="['Desarrolladora fullstack Jr']"
+                        [startDelay]="2000"
+                        [typeSpeed]="70"
+                        [showCursor]="false" 
+                        (completed)="toggleDiv()" 
+                    >
+                        <span class="typing"></span>
+                    </ngx-typed-js>
+                    <span class="simbols"
+                        *ngIf="showSimbol"
+                    > /> 
+                    </span>
+                </span>
+            </div> 
+            <div class="enter"
+                *ngIf="showDiv"
+            >
+                <a
+                (mouseover)="hovered()"
+                (mouseleave)="nothovered()"  
+                >
+                    <fa-icon 
+                        [icon]="enterIcon.icon"  
+                        [transform]="iconTransform(enterIcon.hover)"            
+                    ></fa-icon>
+                    <ngx-typed-js 
+                        [strings]="['Ingresar']"
+                        [startDelay]="100"
+                        [typeSpeed]="100"
+                        [showCursor]="true" 
+                    >
+                    <span class="typing"></span>
+                    </ngx-typed-js>      
+                </a>
+            </div> 
+        </div>
+    </div>
+</div>
+
+

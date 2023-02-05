@@ -1,1 +1,49 @@
-/* You can add global styles to this file, and also import other style files */
+/* Estilos globales*/
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+
+*{
+  font-family: 'Inconsolata', monospace;  
+  /*
+    color: #d2d4d5;
+    color: #5dc1b9;
+    color: #e6fe23
+    color: #fafbfd; 
+  */
+}
+
+.container-fluid {
+  margin: 0px;
+  padding: 0px;
+}
+
+main {
+  position: absolute;
+  width: 100%;
+}
+
+app-navbar {
+  position: fixed;
+  left: 0rem;
+  width: 250px;
+  height: 100vh;
+  background-color: #10191F;
+}
+
+.display-area {
+  position: absolute;
+  left: 250px;
+  height: 100vh;
+  width: calc(100% - 250px);
+}
+
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #B0F2ED;
+}
+
+

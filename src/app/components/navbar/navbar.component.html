@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-lg border-line">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">PORTFOLIO</a>
+    <span class="navbar-name">Irina Ponzi</span>
+
+    <div class="social-media-icons">
+      <a target="_blank" href="https://github.com/vargm3">
+        <i-feather
+          class="feather" 
+          name="github"
+        ></i-feather>
+      </a>
+      <a href="">
+        <i-feather 
+          class="feather"
+          name="linkedin"
+        ></i-feather>
+      </a>      
+    </div>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item active"
+          *ngFor="let nav of navList; let i = index"
+          (mouseover)="hovered(i)"
+          (mouseleave)="nothovered(i)"  
+        >
+          <a href="">
+            <fa-icon 
+              [icon]="nav.icon"              
+              [transform]="iconTransform(nav.hover)"
+            ></fa-icon>                        
+            {{ nav.name }}
+          </a>
+        </li>         
+      </ul>
+      <hr>
+      <button type="button" class="btn">Log in
+        <a href=""></a>
+      </button>
+    </div>
+  </div>
+</nav>
+
+
