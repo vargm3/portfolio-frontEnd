@@ -15,11 +15,11 @@ export class HeaderComponent {
   showDiv: boolean = false;
   
 
-  toggleSimbol() : boolean {
+  toggleSimbol(): boolean {
     return this.showSimbol = true;
   }
 
-  toggleDiv() : boolean {
+  toggleDiv(): boolean {
     return this.showDiv = true;
   }
 

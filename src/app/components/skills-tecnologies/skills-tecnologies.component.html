@@ -1,0 +1,30 @@
+<table class="table table-striped mt-3">             
+    <tbody>
+        <tr
+            *ngFor="let skill of skillList, index as i"
+        >
+            <th scope="row">
+                <fa-icon 
+                    [icon]="skill.icon"                
+                ></fa-icon>                           
+            </th>
+            <td class="tec">
+                {{ skill.tName }}
+            </td>
+            <td class="bar">
+                <div class="progress">
+                    <div 
+                        class="progress-bar" 
+                        role="progressbar" 
+                        [ngStyle]="{ 'width': getWidth(i) }"
+                        aria-valuemin="0" 
+                        aria-valuemax="100"
+                    ></div>
+                </div>
+            {{ skill.level }}
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+  

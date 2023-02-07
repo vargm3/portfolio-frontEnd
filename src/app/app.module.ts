@@ -1,8 +1,12 @@
+// Modules
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IconsModule } from './icons/icons.module';
 import {NgxTypedJsModule} from 'ngx-typed-js';
 
+
+// Components
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -12,6 +16,7 @@ import { AboutComponent } from './components/about/about.component';
 import { WorksComponent } from './components/works/works.component';
 import { EducationComponent } from './components/education/education.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { SkillsTecnologiesComponent } from './components/skills-tecnologies/skills-tecnologies.component';
 
 
 @NgModule({
@@ -23,7 +28,8 @@ import { ContactComponent } from './components/contact/contact.component';
     AboutComponent,
     WorksComponent,
     EducationComponent,
-    ContactComponent
+    ContactComponent,
+    SkillsTecnologiesComponent
   ],
   imports: [
     BrowserModule,

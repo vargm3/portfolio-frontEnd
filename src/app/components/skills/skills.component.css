@@ -1,0 +1,25 @@
+.card-header {
+    background-color: #dbdce3;
+}
+
+.tecnologies {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tecnologies button {
+    border: none;
+    background-color: #dbdce3;
+    font-size: 20px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #141f27;
+}
+
+.card-body {
+    display:flex;
+    justify-content: center;
+}

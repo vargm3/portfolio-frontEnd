@@ -1,5 +1,4 @@
-<div class="container-fluid">
-   
+<div class="container-fluid">   
     <div class="card mb-3" style="max-width: 18rem;">
         <div class="card-header"> 
             # 
@@ -7,7 +6,6 @@
                 [icon]="iconList[0].icon" 
             ></fa-icon>
             {{iconList[0].name}}
-
         </div>
         <div class="card-body text-primary">
           <h5 class="card-title">¡Hola!</h5>
@@ -16,43 +14,10 @@
         </div>
     </div>
 
-    <div class="card mb-3 image" style="max-width: 10rem;">
+    <div class="card mb-3 image" style="max-width: 8rem;">
         <img class="card-img-top" src="../../../assets/about-image.jpg" alt="Card image cap">
-    </div>
+    </div>   
 
-    <div class="card">
-        <div class="card-header tecnologies"> 
-            <span> #
-                <fa-icon 
-                [icon]="iconList[1].icon"
-                ></fa-icon>
-                {{iconList[1].name}}
-            </span> 
-            <button>
-                <fa-icon 
-                    [icon]="iconList[2].icon" 
-                ></fa-icon>           
-            </button>
+    <app-skills></app-skills>  
 
-        </div>
-        <div class="card-header">
-          <ul class="nav nav-tabs card-header-tabs">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-   
 </div>

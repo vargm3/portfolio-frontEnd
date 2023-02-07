@@ -1,0 +1,24 @@
+tr {
+    color: #141f27;
+}
+
+
+tr .bar {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 12rem;
+    font-size: 13px;   
+}
+
+tr .bar .progress {
+    margin: 0px;
+    padding: 0px;
+    height: 8px;
+    border-radius: 0px;
+    background-color: #b9c8d3;
+}
+
+tr .bar .progress .progress-bar {
+    background-color: #2f5f80;
+}
+

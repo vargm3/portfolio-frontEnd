@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faMugHot, faRobot, faCaretDown } from '@fortawesome/free-solid-svg-icons'; 
+import { faMugHot } from '@fortawesome/free-solid-svg-icons'; 
 
 @Component({
   selector: 'app-about',
@@ -8,9 +8,7 @@ import { faMugHot, faRobot, faCaretDown } from '@fortawesome/free-solid-svg-icon
 })
 export class AboutComponent {
 
-  iconList = [ 
-    { name: "Sobre mí", icon: faMugHot },
-    { name: "Tecnologias y habilidades", icon: faRobot },
-    { name: "", icon: faCaretDown }
-  ];
+  iconList = [{ name: "Sobre mí", icon: faMugHot }];
+
+ 
 }
