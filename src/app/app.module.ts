@@ -3,7 +3,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IconsModule } from './icons/icons.module';
-import {NgxTypedJsModule} from 'ngx-typed-js';
+import { NgxTypedJsModule } from 'ngx-typed-js';
 
 
 // Components

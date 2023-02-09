@@ -1,30 +1,37 @@
-<table class="table table-striped mt-3">             
-    <tbody>
-        <tr
-            *ngFor="let skill of skillList, index as i"
-        >
-            <th scope="row">
-                <fa-icon 
-                    [icon]="skill.icon"                
-                ></fa-icon>                           
-            </th>
-            <td class="tec">
-                {{ skill.tName }}
-            </td>
-            <td class="bar">
-                <div class="progress">
-                    <div 
-                        class="progress-bar" 
-                        role="progressbar" 
-                        [ngStyle]="{ 'width': getWidth(i) }"
-                        aria-valuemin="0" 
-                        aria-valuemax="100"
-                    ></div>
-                </div>
-            {{ skill.level }}
-            </td>
-        </tr>
-    </tbody>
-</table>
+<div
+    *ngFor="let skill of skills"
+>
+    <table 
+        class="table table-striped mt-3"
+        *ngIf="skill.id === activeTabId"
+    >             
+        <tbody>
+            <tr
+                *ngFor="let tec of skill.tecList"
+            >
+                <th scope="row">
+                    <fa-icon 
+                        [icon]="tec.icon"                
+                    ></fa-icon>                           
+                </th>
+                <td class="tec">
+                    {{ tec.tName }}
+                </td>
+                <td class="bar">
+                    <div class="progress">
+                        <div 
+                            class="progress-bar" 
+                            role="progressbar" 
+                            [ngStyle]="{'width': tec.value + '%'}"
+                            aria-valuemin="0" 
+                            aria-valuemax="100"
+                        ></div>
+                    </div>
+                    {{ tec.level }}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
-  
+

@@ -1,7 +1,11 @@
 tr {
+    align-items: center;
     color: #141f27;
 }
 
+th fa-icon {
+    font-size: 20px;
+}
 
 tr .bar {
     padding-left: 15px;

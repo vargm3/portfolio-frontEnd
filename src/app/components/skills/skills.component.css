@@ -1,17 +1,14 @@
+.card {
+    min-height: 24.5rem; 
+    max-height: 24.5rem;
+}
+
 .card-header {
     background-color: #dbdce3;
 }
 
-.tecnologies {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.tecnologies button {
-    border: none;
-    background-color: #dbdce3;
-    font-size: 20px;
+.nav-link.active {
+    background-color: #FFFFFF;
 }
 
 .nav-item a {
